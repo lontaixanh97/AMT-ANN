@@ -1,0 +1,8 @@
+nbit_4_5:
+    name: generateNbitDataSet
+    path: 4
+    input: 4
+    hidden: 8
+    hiddens:
+        - 8
+    output: 1

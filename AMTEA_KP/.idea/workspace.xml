@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef6a082a-837e-43c4-b1ed-cd30a4cf3992" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1cHzI4e4VFQnnUZj96jTyxxhhn4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Test/mfeaii-ann-rl" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef6a082a-837e-43c4-b1ed-cd30a4cf3992" name="Default Changelist" comment="" />
+      <created>1590200223395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590200223395</updated>
+      <workItem from="1590200225073" duration="4934000" />
+      <workItem from="1590390044073" duration="1837000" />
+      <workItem from="1590408655772" duration="685000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="298" key="FileChooserDialogImpl" timestamp="1590415478839">
+      <screen x="0" y="339" width="1920" height="741" />
+    </state>
+    <state x="739" y="298" key="FileChooserDialogImpl/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590415478839" />
+  </component>
+</project>
