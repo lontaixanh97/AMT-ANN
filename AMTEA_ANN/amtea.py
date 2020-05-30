@@ -7,6 +7,7 @@ from utils.tools import *
 
 
 def amtea(taskset, config, trans, buildmodel,  callback=None):
+    num_input = taskset.config['input']
     transfer = trans['transfer']
     if transfer:
         TrInt = trans['TrInt']
@@ -42,7 +43,7 @@ def amtea(taskset, config, trans, buildmodel,  callback=None):
     for t in iterator:
         if trans['transfer'] and t % trans['TrInt'] == 0:
             mixModel = MixtureModel(all_models)
-            mixModel.createTable(population, True, 'mvarnorm', D)
+            mixModel.createTable(population, True, num_input, 'mvarnorm', D)
             mixModel.EMstacking()
             mixModel.mutate()
             offspring = mixModel.sample(N)
@@ -94,7 +95,7 @@ def amtea(taskset, config, trans, buildmodel,  callback=None):
             iterator.set_description(desc)
     if buildmodel:
         model = ProbabilisticModel('mvarnorm')
-        model.buildModel(solutions=population)
+        model.buildModel(solutions=population, num_input=num_input)
         all_models.append(model)
         Tools.save_to_file(os.path.join('problems/', 'all_models'), all_models)
 

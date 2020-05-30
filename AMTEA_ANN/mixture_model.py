@@ -10,11 +10,11 @@ class MixtureModel(object):
         self.probTable = None
         self.nSol = None
 
-    def createTable(self, solutions, CV, modelType, dims, probs_RL=None):
+    def createTable(self, solutions, CV, num_input, modelType, dims, probs_RL=None):
         if CV:
             self.nModels = self.nModels + 1
             self.model_list.append(ProbabilisticModel(modelType=modelType))
-            self.model_list[-1].buildModel(solutions)
+            self.model_list[-1].buildModel(solutions, num_input)
             self.alpha = (1 / self.nModels) * np.ones(self.nModels)
             nSol = solutions.shape[0]
             self.nSol = nSol
@@ -22,7 +22,7 @@ class MixtureModel(object):
             if probs_RL is None:
                 for j in range(self.nModels - 1):
                     # print(j)
-                    self.model_list[j].modify(dims)
+                    self.model_list[j].modify1(dims)
                     self.probTable[:, j] = self.model_list[j].pdfEval(solutions)
                     # print(self.probTable.shape)
             else:
@@ -32,7 +32,7 @@ class MixtureModel(object):
             for i in range(nSol):  # Leave-one-out cross validation
                 x = np.concatenate((solutions[:i, :], solutions[i + 1:, :]))
                 tModel = ProbabilisticModel(modelType=modelType)
-                tModel.buildModel(x)
+                tModel.buildModel(x, num_input)
                 self.probTable[i, -1] = tModel.pdfEval(solutions[[i], :])
         else:
             nSol = solutions.shape[0]

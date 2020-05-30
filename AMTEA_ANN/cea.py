@@ -3,7 +3,8 @@ from utils.tools import *
 from probability_model import ProbabilisticModel
 
 
-def cea(taskset, config, callback=None):
+def cea(taskset, config, buildModel, callback=None):
+    num_input = taskset.config['input']
     N = config['pop_size']  # size of population
     D = taskset.dim  # max dim
 
@@ -74,9 +75,11 @@ def cea(taskset, config, callback=None):
                 '{:0.4f}'.format(result.fun)), message)
             iterator.set_description(desc)
     bestSol = population[0, :]
-    model = ProbabilisticModel('mvarnorm')
-    model.buildModel(solutions=population)
-    all_models.append(model)
-    Tools.save_to_file(os.path.join('problems/', 'all_models'), all_models)
+
+    if buildModel:
+        model = ProbabilisticModel('mvarnorm')
+        model.buildModel(solutions=population, num_input=num_input)
+        all_models.append(model)
+        Tools.save_to_file(os.path.join('problems/', 'all_models'), all_models)
 
     return bestSol, fitness_hist

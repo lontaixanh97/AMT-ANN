@@ -16,7 +16,7 @@ conn = create_connection(db)
 local_config = config['amtea']
 seeds = range(local_config['repeat'])
 
-instances = ['nbit_4_8']
+instances = ['nbit_5_8']
 TrInt = 2
 trans = {'transfer': True, 'TrInt': TrInt}
 
@@ -24,13 +24,14 @@ trans = {'transfer': True, 'TrInt': TrInt}
 def amtea_ann():
     # all_models = []
     # Tools.save_to_file(os.path.join('problems/', 'all_models'), all_models)
-
+    buildModel = False
     for seed in seeds:
+        if seed == local_config['repeat'] - 1:
+            buildModel = True
         for instance in instances:
             taskset = create_taskset(instance)
             results = []
-
-            amtea(taskset, local_config, trans, True, callback=results.append)
+            amtea(taskset, local_config, trans, buildModel, callback=results.append)
             # # Logging the result to database
             method_id = get_method_id(conn, db, name='amtea')
             instance_data = singletask_benchmark[instance]

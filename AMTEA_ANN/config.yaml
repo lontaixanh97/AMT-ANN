@@ -6,7 +6,7 @@ ea:
     pswap: 0.5
     dimension: 50
     rmp: 0.3
-    repeat: 1
+    repeat: 30
     is_test: True
 
 amtea:
@@ -16,7 +16,7 @@ amtea:
     pmdi: 5
     pswap: 0.5
     dimension: 50
-    repeat: 1
+    repeat: 30
     is_test: True
 
 database:

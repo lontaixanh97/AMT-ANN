@@ -7,12 +7,14 @@
       <w>createtable</w>
       <w>mstacking</w>
       <w>mvarnorm</w>
+      <w>nbit</w>
       <w>noms</w>
       <w>nsols</w>
       <w>prem</w>
       <w>probofsols</w>
       <w>probofzero</w>
       <w>probtable</w>
+      <w>singletask</w>
       <w>tmodel</w>
     </words>
   </dictionary>
