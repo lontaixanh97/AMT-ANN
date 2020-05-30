@@ -22,6 +22,7 @@ cea_instances = ['nbit_6_7', 'nbit_6_8', 'nbit_6_9', 'nbit_6_10', 'nbit_8_9', 'n
                  'nbit_10_11', 'nbit_10_12', 'nbit_10_13', 'nbit_10_14']
 amtea_instances = ['nbit_6_10', 'nbit_8_12', 'nbit_10_14']
 
+
 # cea_instances = ['nbit_6_7', 'nbit_6_8', 'nbit_8_9', 'nbit_8_10']
 # amtea_instances = ['nbit_6_8', 'nbit_8_10']
 
@@ -40,7 +41,7 @@ def amtea_ann():
                 path = 'all_models' + cea_instance
                 Tools.save_to_file(os.path.join('problems/', path), all_models)
             if cea_instance not in amtea_instances:
-                if seed == local_config['repeat'] - 1:
+                if seed == 0:
                     buildModel = True
                 taskset = create_taskset(cea_instance)
                 results = []
@@ -128,6 +129,7 @@ def amtea_ann():
             #                   }
             #         add_iteration(conn, db, **kwargs)
             #
+
 
 if __name__ == "__main__":
     amtea_ann()

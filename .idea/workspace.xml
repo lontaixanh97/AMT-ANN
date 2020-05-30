@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1077b3b7-25b4-471a-8e79-c90d2b45e07e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/quanhm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/quanhm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/amtea.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/amtea.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/ann_lib/singletask-benchmark.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/ann_lib/singletask-benchmark.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/cea.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/cea.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/problems/all_models.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/run_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/run_experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/utils/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/utils/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,7 @@
       <workItem from="1590822499861" duration="6088000" />
       <workItem from="1590830843651" duration="2527000" />
       <workItem from="1590834619834" duration="180000" />
-      <workItem from="1590852392881" duration="63000" />
+      <workItem from="1590852392881" duration="1853000" />
     </task>
     <servers />
   </component>
