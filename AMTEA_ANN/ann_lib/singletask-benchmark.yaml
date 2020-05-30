@@ -1,107 +1,112 @@
-nbit_5_5:
+# 6 bit input
+nbit_6_7:
     name: generateNbitDataSet
-    path: 5
-    input: 5
-    hidden: 5
-    hiddens:
-        - 5
-    output: 1
-
-nbit_5_6:
-    name: generateNbitDataSet
-    path: 5
-    input: 5
-    hidden: 6
-    hiddens:
-        - 6
-    output: 1
-
-nbit_5_7:
-    name: generateNbitDataSet
-    path: 5
-    input: 5
+    path: 6
+    input: 6
     hidden: 7
     hiddens:
         - 7
     output: 1
 
-nbit_5_8:
+nbit_6_8:
     name: generateNbitDataSet
-    path: 5
-    input: 5
+    path: 6
+    input: 6
     hidden: 8
     hiddens:
         - 8
     output: 1
-#
-#nbit_4:
-#    name: generateNbitDataSet
-#    path: 4
-#    input: 4
-#    hidden: 6
-#    hiddens:
-#        - 2
-#        - 3
-#        - 4
-#    output: 1
 
-#
-#nbit_6_1:
-#    name: generateNbitDataSet
-#    path: 6
-#    input: 6
-#    hiddens:
-#        - 2
-#        - 3
-#        - 4
-#    output: 1
-#
-#nbit_6_2:
-#    name: generateNbitDataSet
-#    path: 6
-#    input: 6
-#    hiddens:
-#        - 3
-#        - 4
-#        - 5
-#    output: 1
-#
-## nbit_6_3_even:
-##     name: generateNbitDataSet
-##     path: 6
-##     input: 6
-##     hiddens:
-##         - 4
-##         - 5
-##         - 6
-##     output: 1
-#
-#nbit_8_1:
-#    name: generateNbitDataSet
-#    path: 8
-#    input: 8
-#    hiddens:
-#        - 2
-#        - 3
-#        - 4
-#    output: 1
-#
-#nbit_8_2:
-#    name: generateNbitDataSet
-#    path: 8
-#    input: 8
-#    hiddens:
-#        - 3
-#        - 4
-#        - 5
-#    output: 1
-#
-#nbit_8_3:
-#    name: generateNbitDataSet
-#    path: 8
-#    input: 8
-#    hiddens:
-#        - 4
-#        - 5
-#        - 6
-#    output: 1
+nbit_6_9:
+    name: generateNbitDataSet
+    path: 6
+    input: 6
+    hidden: 9
+    hiddens:
+        - 9
+    output: 1
+
+nbit_6_10:
+    name: generateNbitDataSet
+    path: 6
+    input: 6
+    hidden: 10
+    hiddens:
+        - 10
+    output: 1
+
+# 8bit input
+
+nbit_8_9:
+    name: generateNbitDataSet
+    path: 8
+    input: 8
+    hidden: 9
+    hiddens:
+        - 9
+    output: 1
+
+nbit_8_10:
+    name: generateNbitDataSet
+    path: 8
+    input: 8
+    hidden: 10
+    hiddens:
+        - 10
+    output: 1
+
+nbit_8_11:
+    name: generateNbitDataSet
+    path: 8
+    input: 8
+    hidden: 11
+    hiddens:
+        - 11
+    output: 1
+
+nbit_8_12:
+    name: generateNbitDataSet
+    path: 8
+    input: 8
+    hidden: 12
+    hiddens:
+        - 12
+    output: 1
+
+# 10bit input
+
+nbit_10_11:
+    name: generateNbitDataSet
+    path: 10
+    input: 10
+    hidden: 11
+    hiddens:
+        - 11
+    output: 1
+
+nbit_10_12:
+    name: generateNbitDataSet
+    path: 10
+    input: 10
+    hidden: 12
+    hiddens:
+        - 12
+    output: 1
+
+nbit_10_13:
+    name: generateNbitDataSet
+    path: 10
+    input: 10
+    hidden: 13
+    hiddens:
+        - 13
+    output: 1
+
+nbit_10_14:
+    name: generateNbitDataSet
+    path: 10
+    input: 10
+    hidden: 14
+    hiddens:
+        - 14
+    output: 1

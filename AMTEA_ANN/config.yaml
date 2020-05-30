@@ -23,15 +23,6 @@ database:
     host: localhost
     user: root
     password: 'password'
-    db: cea
-    verbose: false
-    method:
-        name: VARCHAR(255)
-
-database1:
-    host: localhost
-    user: root
-    password: 'password'
     db: amtea
     verbose: false
     method:

@@ -6,12 +6,12 @@ from mixture_model import MixtureModel
 from utils.tools import *
 
 
-def amtea(taskset, config, trans, buildmodel,  callback=None):
+def amtea(taskset, config, trans, buildmodel, path, callback=None):
     num_input = taskset.config['input']
     transfer = trans['transfer']
     if transfer:
         TrInt = trans['TrInt']
-        all_models = Tools.load_from_file(os.path.join('problems/', 'all_models'))
+        all_models = Tools.load_from_file(os.path.join('problems/', path))
 
     N = config['pop_size']  # size of population
     D = taskset.dim  # dim
@@ -97,6 +97,6 @@ def amtea(taskset, config, trans, buildmodel,  callback=None):
         model = ProbabilisticModel('mvarnorm')
         model.buildModel(solutions=population, num_input=num_input)
         all_models.append(model)
-        Tools.save_to_file(os.path.join('problems/', 'all_models'), all_models)
+        Tools.save_to_file(os.path.join('problems/', path), all_models)
 
     return bestSol, bestfit_hist
