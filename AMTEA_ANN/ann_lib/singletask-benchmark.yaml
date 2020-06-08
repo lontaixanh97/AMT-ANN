@@ -1,4 +1,78 @@
-# 6 bit input
+# 4bit input
+nbit_4_5:
+    name: generateNbitDataSet
+    path: 4
+    input: 4
+    hidden: 5
+    hiddens:
+        - 5
+    output: 1
+
+nbit_4_6:
+    name: generateNbitDataSet
+    path: 4
+    input: 4
+    hidden: 6
+    hiddens:
+        - 6
+    output: 1
+
+nbit_4_7:
+    name: generateNbitDataSet
+    path: 4
+    input: 4
+    hidden: 7
+    hiddens:
+        - 7
+    output: 1
+
+nbit_4_8:
+    name: generateNbitDataSet
+    path: 4
+    input: 4
+    hidden: 8
+    hiddens:
+        - 8
+    output: 1
+
+# 5bit input
+nbit_5_5:
+    name: generateNbitDataSet
+    path: 5
+    input: 5
+    hidden: 5
+    hiddens:
+        - 5
+    output: 1
+
+nbit_5_6:
+    name: generateNbitDataSet
+    path: 5
+    input: 5
+    hidden: 6
+    hiddens:
+        - 6
+    output: 1
+
+nbit_5_7:
+    name: generateNbitDataSet
+    path: 5
+    input: 5
+    hidden: 7
+    hiddens:
+        - 7
+    output: 1
+
+nbit_5_8:
+    name: generateNbitDataSet
+    path: 5
+    input: 5
+    hidden: 8
+    hiddens:
+        - 8
+    output: 1
+
+# 6bit input
 nbit_6_7:
     name: generateNbitDataSet
     path: 6
