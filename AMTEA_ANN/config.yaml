@@ -6,7 +6,7 @@ ea:
     pswap: 0.5
     dimension: 50
     rmp: 0.3
-    repeat: 30
+    repeat: 1
     is_test: True
 
 amtea:
@@ -23,7 +23,7 @@ database:
     host: localhost
     user: root
     password: 'password'
-    db: amtea
+    db: amtea_delta5
     verbose: false
     method:
         name: VARCHAR(255)

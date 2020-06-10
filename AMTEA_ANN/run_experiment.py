@@ -19,8 +19,8 @@ local_config = config['ea']
 seeds = range(local_config['repeat'])
 amtea_config = config['amtea']
 
-cea_instances = ['nbit_6_7', 'nbit_6_8', 'nbit_6_9', 'nbit_6_10']
-amtea_instances = ['nbit_6_10']
+cea_instances = ['nbit_4_5', 'nbit_4_6', 'nbit_4_7', 'nbit_4_8']
+amtea_instances = ['nbit_4_8']
 
 
 # cea_instances = ['nbit_6_7', 'nbit_6_8', 'nbit_8_9', 'nbit_8_10']
@@ -42,6 +42,8 @@ def amtea_ann():
         # for cea_instance in cea_instances:
         #     if cea_instance in amtea_instances:
         #         buildModel = False
+        #     if cea_instance not in amtea_instances and seed == 0:
+        #         buildModel = True
         #     taskset = create_taskset(cea_instance)
         #     results = []
         #     # run cea
@@ -67,7 +69,7 @@ def amtea_ann():
         for amtea_instance in amtea_instances:
             taskset = create_taskset(amtea_instance)
             results = []
-            TrInt = 2
+            TrInt = 5
             trans = {'transfer': True, 'TrInt': TrInt}
             amtea(taskset, amtea_config, trans, False, path, callback=results.append)
             # Logging the result to database
