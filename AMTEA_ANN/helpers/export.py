@@ -1,6 +1,7 @@
 from .helpers import *
 from .instance import *
 
+
 def export_result(instances, list_instances):
     ''' print template
     CEA (4,5,6) & $0.0331 \pm 0.0091 $& $0.0166 \pm 0.0097$ & $\mathbf{0.0058 \pm 0.0012}$ \\ 
@@ -23,25 +24,25 @@ def export_result(instances, list_instances):
         idx = 0
         for tmp in re:
             index = 0
-            if(idx == 0): text = list_instances[i] + ' CEA '
-            if(idx == 1): text = list_instances[i] + ' MFEA-I '
+            if (idx == 0): text = list_instances[i] + ' CEA '
+            if (idx == 1): text = list_instances[i] + ' MFEA-I '
             # if(idx == 2): text = list_instances[i] + ' MFEA-II '
             for item in tmp:
-                text += item_template.format(np.round(item[2],4), np.round(item[3],4))
+                text += item_template.format(np.round(item[2], 4), np.round(item[3], 4))
                 index += 1
             text += '\\\\'
-            if(idx == 2): text += '\\hline\n'
+            if (idx == 2): text += '\\hline\n'
             texts += text
-            print (text)
+            print(text)
 
             idx = idx + 1
-        i+=1
+        i += 1
     return texts
 
 
 def result_to_string():
     list_instances = get_list_instance_name()
-    list_instances = ["nbit_8_12"]
+    list_instances = ['nbit_10_11', 'nbit_10_12', 'nbit_10_13', 'nbit_10_14']
     results = []
     names = []
     for ins in list_instances:
@@ -51,6 +52,7 @@ def result_to_string():
         results.append(result)
         # print(ins, result)
     export_result(results, list_instances)
+
 
 if __name__ == "__main__":
     pass

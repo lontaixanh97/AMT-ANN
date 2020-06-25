@@ -57,15 +57,6 @@ def calculate_scalar_fitness(factorial_cost):
     return 1 / np.min(np.argsort(np.argsort(factorial_cost, axis=0), axis=0) + 1, axis=1)
 
 
-# MULTIFACTORIAL EVOLUTIONARY WITH TRANSFER PARAMETER ESTIMATION HELPER FUNCTIONS
-# def get_subpops(population, skill_factor, N):
-#   K = len(set(skill_factor))
-#   subpops = []
-#   for k in range(K):
-#     idx = np.where(skill_factor == k)[0][:N//K]
-#     subpops.append(population[idx, :])
-#   return subpops
-
 def get_subpops(population, skill_factor, N):
     K = len(set(skill_factor))
     subpops = []
@@ -82,8 +73,7 @@ class Model:
         self.num_sample = num_sample
 
     def density(self, subpop, D):
-        N = subpop.shape[
-            0]  # Trong code gốc math lab thì ko dung D mà dùng số chiều thực của task -> D là số chiều multi task
+        N = subpop.shape[0]
         prob = np.ones([N])
         for d in range(D):
             prob *= norm.pdf(subpop[:, d], loc=self.mean[d], scale=self.std[d])

@@ -5,7 +5,7 @@ from .instance import *
 
 def evaluate_EA():
     list_instances = get_list_instance_name()
-    instance = Instance(config, 'nbit_6_7')  # task 8 bit
+    instance = Instance(config, 'nbit_10_13')  # task 8 bit
     arr = np.asarray(instance.results_by_tasks)
     best_result = arr  # task 8bit max
     # best_result = np.sort(best_result, axis = -1)
@@ -13,6 +13,7 @@ def evaluate_EA():
     results = []
     for best in best_result:
         result = []
+        print(best.shape)
         for el in best:
             re = []
             for tmp in el:
@@ -25,6 +26,7 @@ def evaluate_EA():
         result = result[:, :, :, 2]
         results.append(result)
     results = np.asarray(results)
+    print(results.shape)
     convergence_train(results)
     # compare_final_score(results) # if use to evaluate rl problem
 

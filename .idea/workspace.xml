@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1077b3b7-25b4-471a-8e79-c90d2b45e07e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/quanhm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/quanhm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/ann_lib/taskset.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/ann_lib/taskset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/evaluate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/helpers/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/helpers/evaluate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/helpers/export.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/helpers/export.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/helpers/instance.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/helpers/instance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/helpers/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/helpers/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/helpers/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/helpers/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/mean_and_std.eps" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/mean_and_std.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMTEA_ANN/mfea_ii_lib/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/mfea_ii_lib/operators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/problems/all_models.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/problems/all_models.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMTEA_ANN/run_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/AMTEA_ANN/run_experiment.py" afterDir="false" />
     </list>
@@ -74,7 +77,22 @@
       <workItem from="1591001995716" duration="2603000" />
       <workItem from="1591035025016" duration="22151000" />
       <workItem from="1591638081331" duration="21178000" />
-      <workItem from="1591728209666" duration="8697000" />
+      <workItem from="1591728209666" duration="14446000" />
+      <workItem from="1592016594432" duration="23142000" />
+      <workItem from="1592280532215" duration="12891000" />
+      <workItem from="1592362198328" duration="4370000" />
+      <workItem from="1592377363351" duration="4972000" />
+      <workItem from="1592405607936" duration="2861000" />
+      <workItem from="1592446646314" duration="2032000" />
+      <workItem from="1592467653380" duration="504000" />
+      <workItem from="1592470950382" duration="288000" />
+      <workItem from="1592490289200" duration="2600000" />
+      <workItem from="1592545020430" duration="11873000" />
+      <workItem from="1592581094054" duration="1421000" />
+      <workItem from="1592593630764" duration="10766000" />
+      <workItem from="1592728034201" duration="894000" />
+      <workItem from="1592980800799" duration="613000" />
+      <workItem from="1592994806474" duration="852000" />
     </task>
     <servers />
   </component>
@@ -92,11 +110,11 @@
     <state x="462" y="155" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1590823917830" />
     <state x="462" y="155" key="FileChooserDialogImpl/1920.312.1366.768/0.27.1366.741@0.27.1366.741" timestamp="1591690172991" />
     <state x="2382" y="445" key="FileChooserDialogImpl/1920.312.1366.768/0.339.1920.741@1920.312.1366.768" timestamp="1590415461960" />
-    <state x="448" y="537" key="com.intellij.ide.util.TipDialog" timestamp="1591728211365">
-      <screen x="0" y="339" width="1920" height="741" />
+    <state x="319" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1593071837997">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="319" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1590916222543" />
-    <state x="448" y="537" key="com.intellij.ide.util.TipDialog/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1591728211365" />
+    <state x="319" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1593071837997" />
+    <state x="448" y="537" key="com.intellij.ide.util.TipDialog/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1592593630714" />
     <state x="2239" y="517" key="com.intellij.ide.util.TipDialog/1920.312.1366.768/0.339.1920.741@1920.312.1366.768" timestamp="1590734829658" />
     <state x="1169" y="63" width="635" height="532" key="dock-window-1" timestamp="1589592336319">
       <screen x="0" y="27" width="1366" height="741" />

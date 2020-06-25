@@ -43,20 +43,6 @@ class Taskset:
         n_h = hidden[0]
         return (num_input + 1) * n_h + n_h + 1
 
-    # @property
-    # def array_dimensions(self):
-    #     num_input = self.config['input']
-    #     dimensions = [((num_input + 1) * h + h + 1) for h in self.config['hiddens']]
-
-    #     return dimensions
-
-    # @property
-    # def topo(self):
-    #     num_input = self.config['input']
-    #     shape = [[num_input, h, 1] for h in self.config['hiddens']]
-
-    #     return shape
-
     def indirect_decode(self, solution, sf):
         num_input = self.config['input']
         num_hidden = self.config['hiddens'][sf]
@@ -138,12 +124,11 @@ class Taskset:
         return w1, b1, w2, b2
 
     def evaluate(self, solution):
-        '''
+        """
         Params
         ------
         - solution (vector): vector of weights of ANN
-        - sf (int): skill factor
-        '''
+        """
         w1, b1, w2, b2 = self.direct_decode(solution)
         out = sigmoid(self.X @ w1 + b1)
         out = sigmoid(out @ w2 + b2)
@@ -152,9 +137,3 @@ class Taskset:
 
 if __name__ == '__main__':
     pass
-    # config = yaml.load(open('data/singletask-benchmark.yaml').read())
-    # instance = 'ionosphere'
-    # taskset = Taskset(config[instance])
-
-    # solution = np.random.rand(taskset.D_multitask)
-    # print(taskset.evaluate(solution, 2))
